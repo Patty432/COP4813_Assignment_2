@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Time of Day</title>
+
+        <!--javascript code to change the background color-->
+        <script>
+            window.onload = function() {
+                const time = new Date().getHours();
+                let bg_color;
+
+                if (time >= 6 && time < 12) {
+                    bg_color = "#65E69E";
+                } else if (time >= 12 && time < 18) {
+                    bg_color = "#E6D165";
+                } else if (time >= 18 && time < 21) {
+                    bg_color = "#6C64E5";
+                } else {
+                    bg_color = "#E67065";
+                }
+
+                document.body.style.backgroundColor = bg_color;
+            }
+        </script>
+    </header>
+    <body>
+        <!--HTML basic info-->
+        <p>First & Last Name: Patricia Chung</p>
+        <p>Course Name: COP4813 Web Applications Programming</p>
+        <p>Major: Computer Science BS</p>
+        <p>Welcome to my dynamic page!</p>
+
+    </body>
+</html>
